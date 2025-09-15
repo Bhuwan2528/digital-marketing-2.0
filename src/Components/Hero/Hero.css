@@ -1,0 +1,98 @@
+.hero {
+    max-width: 100%;
+    overflow-x: hidden; /* lowercase x */
+    padding-top: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    position: relative; /* so absolute child stays inside */
+    text-align: center;
+}
+.hero .btn{
+    margin: 2rem auto;
+    margin-top: 0.75rem;
+}
+
+.btn h4{ 
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.hero h4 span{
+    background: linear-gradient(to right, #a200ff, #ff0180);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: 900;   
+}
+.btn:hover h4 span {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.hero-text {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.hero-text span {
+    background: linear-gradient(to right, #a200ff, #ff0180);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+.hero img {
+    display: block;
+    width: 100%; /* prevents overflow on small screens */
+    max-width: 95%;
+    margin: 1rem auto;
+    border-radius: 20px;
+}
+
+
+
+
+@media(max-width:820px){
+    .hero {
+        height: 100vh;
+    }
+}
+
+@media(max-width:480px){
+    .hero-text {
+        width: 95%;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin-bottom: 2rem;
+        letter-spacing: 2px;
+    }
+    .hero {
+        height: 95vh;
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+    }
+}
+
+@media(max-width:400px){
+    .hero {
+        height: 100vh;
+        padding: 3rem 1rem;
+        height: 115vh;
+    }
+    .hero-text {
+        font-size: 2.5rem;
+        width: 95%;
+    }
+    .hero .btn{
+        width: 90%;
+    }
+    .hero .btn h4{
+        font-size: 27px;
+    }
+}

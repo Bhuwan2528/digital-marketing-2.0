@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/*          button animation          */
+
+/* .btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 19px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #1264b6, #00aeffa9);
+  border: 1px solid #1c46cf;
+  border-radius: 999px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #01041a, #050c4d);
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover .btn-icon {
+  transform: translateX(6px);
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+} */
+.btn {
+  position: relative;
+  padding: 18px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 999px;
+  /* background: 
+    linear-gradient(45deg, #ff69b4, #8a2be2) border-box,
+    transparent padding-box; */
+    background: transparent;
+  background-clip: border-box, padding-box;
+  background-origin: border-box;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 0;
+
+  /* Glow */
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.5),
+              0 0 20px rgba(132, 0, 255, 0.5);
+}
+
+/* Hover fill layer */
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to left, #f3218a, #9b37f8);
+  border-radius: 999px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn-icon {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .btn-icon {
+  transform: translateX(6px);
+}
+
+.btn > * {
+  position: relative;
+  z-index: 1;
+}

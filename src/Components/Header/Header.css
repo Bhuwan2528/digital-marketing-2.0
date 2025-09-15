@@ -1,0 +1,109 @@
+.header{
+    /* height: 200vh; */
+    max-width: 100%;
+    overflow: hidden;
+    background-image: url(../../assets/bg1.png);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+.navbar {
+  width: 100%;
+  height: fit-content;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 3rem;
+  background: transparent;
+}
+.sticky-nav{
+    background: rgb(234, 236, 238);
+    backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #222;
+}
+.navbar img{
+    width: 5.4rem;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 500;
+    font-size: 18px;
+}
+.navbar ul li:hover{
+    transform: translateY(-30%);
+}
+.side-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.sticky-nav .btn, .sticky-nav svg{
+  color: black;
+  fill: black;
+}
+.hero-text {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+.sticky-nav .hero-text{
+  color: black
+}
+.hero-text span {
+    background: linear-gradient(to right, #a200ff, #ff0180);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: auto;
+}
+.bottom-element{
+  position: fixed;
+  height: 70px;
+  width: 70px;
+  background: white;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.bottom-left-element{
+  bottom: 15px;
+  left: 15px;
+}
+.bottom-right-element{
+  bottom: 15px;
+  right: 15px;
+}
+.bottom-element svg{
+  fill: rgb(2, 16, 32);
+  font-size: 40px;
+  font-weight: 900;
+}
+.bottom-left-element svg{
+  fill: rgb(4, 104, 12);
+}
+@media(max-width: 450px){
+  .navbar{
+    padding: 1rem;
+  }
+  .bottom-element{
+    display: flex;
+  }
+}
