@@ -20,7 +20,9 @@ import { MdCall } from "react-icons/md";
 import Trainners from '../../Trainners/Trainners';
 import Success from '../../Success/Success';
 import Video from '../../Video/Video';
-
+import Free from '../Free/Free';
+import Certificate from '../../Components/Certificate/Certificate'
+import Testimonials from '../Testimonials/Testimonials';
 
 const Header = ({ openPopup }) => {
 
@@ -73,14 +75,17 @@ const Header = ({ openPopup }) => {
         <Hero/>
         <Bottom/>
         <Course openPopup={openPopup}/>
+        <Free/>
         <About openPopup={openPopup}/>
         {/* <Offers/> */}
         <Stats />
         <Counter openPopup={openPopup}/>
+        <Testimonials/>
         <Placement/>
         <Trainners/>
         <Success/>
         <Video/>
+        <Certificate/>
         <Join/>
         <Choose/>
         <Footer/>

@@ -4,7 +4,7 @@ import "./Info.css";
 
 const data = [
   { icon: <FaCalendarAlt />, title: "Next Batch", subtitle: "Starting soon..." },
-  { icon: <FaClock />, title: "Duration", subtitle: "3-11 Months" },
+  { icon: <FaClock />, title: "Duration", subtitle: "2 Hrs" },
   { icon: <FaCertificate />, title: "Certificates", subtitle: "20+ Certificates" },
   { icon: <FaUserTie />, title: "Placement", subtitle: "100% Support" },
   { icon: <FaUsers />, title: "52,000+", subtitle: "Students Passed" },

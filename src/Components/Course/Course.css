@@ -1,212 +1,104 @@
-.courses{
-  padding: 3rem 3rem;
+.courses {
+      max-width: 1200px;
+    margin: 0 auto;
+  padding: 4rem 2rem;
   width: 100%;
+  color: white;
   overflow: hidden;
-  position: relative;
 }
-.courses h2{
-  font-size: 45px;
+
+.courses h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.courses p {
+  font-size: 1.2rem;
   text-align: center;
   margin-bottom: 3rem;
+  color: #ccc;
 }
-.course-container{
-  width: 100%;
-  padding: 0 1rem;
-  background: rgba(0, 0, 0, 0.322);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  margin: auto;
-  border-radius: 30px;
+
+.courses-img img {
+  display: block;
+  margin: 0 auto 3rem auto;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.courses-list {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  flex-shrink: 0;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.course{
-  width: 33.4%;
+
+.course-card {
+  background: #1b1b1b5b;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  position: relative;
-  flex-shrink: 0;
-}
-.course span{
-  display: block;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  color: white;
-  text-align: center;
-  padding: 2.5%;
-  font-size: 35px;
-  font-weight: 900;
-
-  box-shadow: 0 0 10px rgba(255, 0, 128, 0.5), 0 0 10px rgba(119, 0, 255, 0.308);
+  border-radius: 15px;
+  flex: 1 1 300px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* ---------------------- OUTLINE TEXT ------------------ */
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.8);
+}
 
-.course span p{
-  font-size: 35px;
-  font-weight: bold;
-  color: rgb(3, 21, 48); /* 🔍 Make text transparent */
-  -webkit-text-stroke: 2px transparent; /* Needed for fallback */
-
-  background: linear-gradient(45deg, #ff00cc, #3333ff);
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 2px transparent;
-
-  position: relative;
-}
-.course span p::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0; left: 0;
-  color: transparent;
-  -webkit-text-stroke: 2px;
-  background: linear-gradient(45deg, #ff00cc, #3333ff);
-  -webkit-background-clip: text;
-  pointer-events: none;
-}
-.course:hover span p{
-  color: transparent; 
-}
-.course:hover span{
-  box-shadow: 0 0 20px rgba(255, 0, 128, 0.5), 0 0 20px rgba(119, 0, 255, 0.308); 
-}
-.course:hover h3{
-  background: linear-gradient(to left, #4400ff, #ff0178);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
-}
-.btn.course-btn{
-  padding: 15px 18px;
-   box-shadow: 0 0 10px rgba(255, 0, 128, 0.5),
-              0 0 10px rgba(132, 0, 255, 0.5);
-}
-/* --------------------OUTLINE TEXT FINISHES HERE -------------------*/
-
-.course img {
-  display: block;
-  width: 100%;
-  height: 180px;
-  border-radius: 40px;
-  margin-bottom: 15px;
-  z-index: 2;
-  object-fit: cover;
-
-  /* 👇 This creates the inward curve */
-  -webkit-mask-image: radial-gradient(circle 80px at top left, transparent 99%, black 100%);
-  mask-image: radial-gradient(circle 80px at top left, transparent 99%, black 100%);
-}
-.course h3{
-  margin-top: 1rem;
-  font-size: 22px;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
-}
-.course ul{
+.course-card ul {
+  list-style: none;
+  padding: 0;
   margin-bottom: 1.5rem;
 }
-.course ul li{
+
+.course-card ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
   display: flex;
-  align-items: center;
-  gap: 10px;
-  list-style: none;
-  text-decoration: none;
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-bottom: 3px;
+  align-items: center;  /* ensures icon and text are vertically centered */
+  gap: 12px;
+  line-height: 1.4;     /* helps align multi-line text */
 }
 
-/*-------------------------- ARROW BUTTONS ------------------- */
+.course-card ul li .icon {
+  font-size: 18px;      /* adjust icon size to match text */
+  flex-shrink: 0;       /* prevent icon from shrinking */
+  color: #00ffff;
+}
 
-
-.arrow-btn {
-  position: absolute;
-  top: 55%;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  background: #ffffff5d;
-  color: rgba(0, 0, 0, 0.63);
+.course-btn {
+  width: 100%;
+  background: rgb(21, 108, 190);
+  box-shadow: 0 0 10px rgba(8, 162, 233, 0.61);
+  text-align: center;
+  padding: 20px 30px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
   border: none;
-  font-size: 24px;
-  padding: 10px;
+  border-radius: 10px;
   cursor: pointer;
-  z-index: 10;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 50%;
-}
-.arrow-btn:hover{
-  background: white;
-  color: black;
+
+  /* Flex properties to center content */
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  gap: 10px;               /* space if you add an icon later */
 }
 
-.arrow-btn.left {
-  left: 10px;
-}
-
-.arrow-btn.right {
-  right: 10px;
-}
-
-/* Optional: Hide scrollbar */
-.course-container::-webkit-scrollbar {
-  display: none;
-}
-.course-container {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.course-btn:hover {
+  background: rgb(8, 162, 233);
+  box-shadow: 0 0 15px rgba(8, 162, 233, 0.8);
 }
 
 
-@media(max-width: 820px){
-  .courses{
-    padding: 3rem 0;
-  }
-  .course-container{
-    width: 80%;
-  }
-  .course{
-    width: 100%;
-  }
-  .course-container{
-    overflow-x: hidden;
-    flex-wrap: wrap;
-    gap: 3rem;
-    background: transparent;
-    border: none;
-  }
-  .course img{
-    width: 100%;
-    height: 300px;
-    margin-bottom: 30px;
-    -webkit-mask-image: radial-gradient(circle 100px at top left, transparent 99%, black 100%);
-    mask-image: radial-gradient(circle 100px at top left, transparent 99%, black 100%);
-  }
-  .course{
-    background: rgba(0, 0, 0, 0.322);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50px;
-  }
-  .arrow-btn{
-    display: none;
-  }
-}
-@media(max-width: 450px){
-  .course-container{
-    width: 95%;
-  }
-  .course{
-    padding: 1.5rem;
-  }
-}
