@@ -60,6 +60,9 @@ p {
 
 @media (max-width: 480px) {
   .info-card {
-    width: 45%
+    width: 48%
+  }
+  .info-section{
+    gap: 10px;
   }
 }

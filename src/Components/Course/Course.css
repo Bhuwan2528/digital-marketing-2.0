@@ -102,3 +102,15 @@
 }
 
 
+@media(max-width: 500px){
+  .courses{
+    padding: 3rem 1.5rem;
+  }
+  .courses h2{
+    font-size: 2rem;
+  }
+  .courses p{
+    font-size: 1rem;
+    width: 100%;
+  }
+}

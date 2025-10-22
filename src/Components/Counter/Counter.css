@@ -69,8 +69,12 @@
   .countdown-timer{
     margin: auto;
     flex-basis: 60%;
+    justify-content: center;
   }
   .time-box{
     min-width: 100px;
+  }
+  .countdown-container{
+    width: 90%;
   }
 }

@@ -58,14 +58,40 @@
     border-radius: 50%;
     background: rgb(6, 38, 87);
 }
-@media(max-width: 400px){
-    .trainner{
+@media (max-width: 500px) {
+    .trainners {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .trainners h2 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .trainners p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .trainner-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .trainner {
         width: 100%;
+        height: auto;
+        padding: 1rem;
     }
-    .trainners{
-        padding: 2rem;
+
+    .trainner .trainner-img {
+        height: 100px;
+        width: 100px;
     }
-    .trainners h2{
-        font-size: 30px;
+
+    .trainner-img img {
+        width: 85%;
+        height: 85%;
     }
 }

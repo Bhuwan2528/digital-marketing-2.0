@@ -60,7 +60,7 @@
 @media(max-width: 450px){
     .choose{
         margin-top: 0rem;
-        padding: 0 2rem;
+        padding: 0 1.5rem;
         width: 100%;
     }
     .choose-card .card-right{

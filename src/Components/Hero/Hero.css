@@ -177,3 +177,19 @@
     max-width: 90%;
   }
 }
+
+
+@media(max-width: 500px){
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+    .hero-left h3{
+        width: 100%;
+    }
+    .hero-left h3:nth-child(2) {
+        width: 100%;
+        }
+        .hero-details{
+            width: 100%;
+        }
+}
