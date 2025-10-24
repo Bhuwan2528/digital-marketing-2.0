@@ -1,42 +1,47 @@
 import React from "react";
 import './Free.css';
-import bonus1Img from '../../assets/offer.png'; // example image
+import bonus1 from '../../assets/hosting.png';
+import bonus2 from '../../assets/canva.png';
+import bonus3 from '../../assets/tools.png';
+import bonus4 from '../../assets/whatsapp.png';
+import bonus5 from '../../assets/notes.png';
+import bonus6 from '../../assets/affiliate.png';
 
 const bonuses = [
   {
     title: "Bonus 1",
     subtitle: "Get 1 Year of Fast & Secure Domain Hosting for Your Website",
-    img: bonus1Img,
+    img: bonus1,
     price: "₹10,000",
   },
   {
     title: "Bonus 2",
     subtitle: "Unlock Professional Design Tools with Canva Pro",
-    img: bonus1Img,
+    img: bonus2,
     price: "₹4,000",
   },
   {
     title: "Bonus 3",
     subtitle: "Access Advanced Marketing Tools for Better Results",
-    img: bonus1Img,
+    img: bonus3,
     price: "₹11,500",
   },
   {
     title: "Bonus 4",
     subtitle: "WhatsApp Marketing Software for Smarter Campaigns",
-    img: bonus1Img,
+    img: bonus4,
     price: "₹3,000",
   },
   {
     title: "Bonus 5",
     subtitle: "Detailed Notes for everything learnt in the Workshop for reference",
-    img: bonus1Img,
+    img: bonus5,
     price: "₹3,500",
   },
   {
     title: "Bonus 6",
     subtitle: "Promote & Earn Seamlessly with Our Affiliate Platform",
-    img: bonus1Img,
+    img: bonus6,
     price: "₹3,500",
   },
 ];

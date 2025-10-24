@@ -90,6 +90,7 @@ h2 span{
 .id-cont p{
     color: rgb(226, 226, 226);
     margin: 0;
+    white-space: nowrap;
 }
 @media(max-width: 820px){
     .about{
