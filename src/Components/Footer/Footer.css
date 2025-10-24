@@ -169,11 +169,20 @@
 }
 
 @media (max-width: 450px) {
+    .talk{
+        padding: 0 10px;
+        align-items: center;
+    }
+    .branch{
+        width: 90%;
+        gap: 15px;
+    }
   .footer-container .talk h3 {
-    font-size: 32px;
+    font-size: 40px;
   }
   .talk h2 {
     font-size: 22px;
+    white-space: nowrap;
   }
   .email-container h4 {
     font-size: 18px;
