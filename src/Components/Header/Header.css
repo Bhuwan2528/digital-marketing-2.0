@@ -2,7 +2,7 @@
     /* height: 200vh; */
     max-width: 100%;
     overflow: hidden;
-    background-image: url(../../assets/bg1.png);
+    background-image: url(../../assets/bg2.png);
     background-position: top;
     background-size: cover;
     position: relative;
@@ -106,4 +106,6 @@
   .bottom-element{
     display: flex;
   }
+
+
 }
