@@ -11,7 +11,10 @@ const Footer = () => {
         <div className="footer-container">
             <div className="talk">
                 <h3>Let's Talk </h3>
-                <h2>+91 8950329919</h2>
+                <div>
+                    <h2>+91 8950329919</h2>
+                    <h2>+91 8950329919</h2>
+                </div>
             </div>
 
             <div className="branch">

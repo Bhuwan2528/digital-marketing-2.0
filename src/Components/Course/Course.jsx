@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import './Course.css'
-import { FaArrowRight, FaArrowRightLong } from "react-icons/fa6";
-import graphic from '../../assets/graphic.png'
-import digital from '../../assets/digital.jpeg'
-import video from '../../assets/video.jpeg'
+import { FaArrowRight } from "react-icons/fa6";
 import img from '../../assets/courses-img.jpg'
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -17,11 +14,10 @@ const coursesData = [
 const Course = ({ openPopup }) => {
   useEffect(() => {
     AOS.init({
-      duration: 600, // slightly smoother
-      once: true,    // ensures animation plays only once
-      offset: 80,    // starts a bit earlier for better effect
+      duration: 600,
+      once: true,
+      offset: 80,
     });
-
   }, []);
 
   return (
@@ -33,24 +29,24 @@ const Course = ({ openPopup }) => {
         <img src={img} alt="Courses" />
       </div>
 
-      <div className="courses-list">
-        {coursesData.map((courseGroup, idx) => (
-          <div className="course-card" key={idx} data-aos="fade-up" data-aos-delay={idx * 100}>
-            <ul>
+      <div className="single-course-card" data-aos="fade-up" data-aos-delay="200">
+        <div className="course-columns">
+          {coursesData.map((courseGroup, idx) => (
+            <ul key={idx}>
               {courseGroup.map((item, index) => (
                 <li key={index}>
                   <FaArrowRight className="icon" /> {item}
                 </li>
               ))}
             </ul>
-            <button className=" course-btn" onClick={openPopup}>
-              Apply Now
-            </button>
-          </div>
-        ))}
+          ))}
+        </div>
+        <button className="course-btn-big" onClick={openPopup}>
+          Apply Now
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Course;

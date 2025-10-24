@@ -127,4 +127,7 @@
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
+  .offer-box{
+    margin-top: 30px;
+  }
 }

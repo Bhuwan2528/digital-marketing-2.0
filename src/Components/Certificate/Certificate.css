@@ -136,24 +136,12 @@
   }
 
   /* ✅ FIXED OFFER BOX */
-  .offer-box {
-    width: 100%;
-    max-width: 320px;
+  .certificate-box.offer-box {
+
     margin: 0 auto 0 !important;
     margin-top: 0 !important;
-    padding: 14px 18px;
-    border-radius: 10px;
-    display: block;
-    text-align: center;
-  }
+    padding: 10px;
 
-  .offer-title {
-    font-size: 1rem;
-    line-height: 1.2;
-  }
-
-  .offer-sub {
-    font-size: 0.85rem;
   }
 
   .register-text {

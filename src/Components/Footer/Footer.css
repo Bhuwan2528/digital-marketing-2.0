@@ -1,150 +1,184 @@
-.footer{
-    margin-bottom: 0;
+.footer {
+  margin-bottom: 0;
+  padding: 2rem 1rem;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.footer-container {
+  width: 97%;
+  margin: 1rem auto;
+  background: rgba(2, 25, 46, 0.473);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.342);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* === TALK SECTION === */
+.talk {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .talk h3 {
+  font-size: 90px;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background: linear-gradient(45deg, #ff0162, #8c00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+}
+
+.talk h2 {
+  font-size: 30px;
+  margin: 0.3rem 0;
+  color: white;
+  text-align: right;
+}
+
+/* === BRANCH SECTION === */
+.branch {
+  margin: 2rem auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.branch h3 {
+  font-size: 35px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.branch h2 {
+  font-size: 20px;
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+/* === EMAIL SECTION === */
+.email-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.email-container h4 {
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.email-box {
+  position: relative;
+  width: 24rem;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.email-box input {
+  width: 100%;
+  height: 3.5rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+
+.email-box span {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  background: linear-gradient(45deg, #ff0162, #8c00ff);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-box span svg {
+  font-size: 1.4rem;
+  fill: rgb(1, 8, 22);
+}
+
+.email-box:hover input {
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.email-box span:hover {
+  background: black;
+}
+
+.email-box span:hover svg {
+  fill: white;
+}
+
+/* === COPYRIGHT === */
+.copyright {
+  background: black;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .footer-container {
     padding: 2rem 1rem;
-    padding-bottom: 0;
-    margin: 0;
-}
-.footer-container{
-    width: 97%;
-    margin: 1rem auto;
-    background: rgba(2, 25, 46, 0.473);
-    backdrop-filter: blur(5px);
-    border-radius: 30px;
-    border: 2px solid rgba(0, 0, 0, 0.342);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
-    padding: 3rem 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-container .talk h3{
-    font-size: 70px;
-    font-weight: 900;
-    display: inline-block;
-    background: linear-gradient(45deg, #ff0162, #8c00ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.talk{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.talk h2{
-    font-size: 50px;
-}
-.branch{
-    margin: 2rem auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.branch h3{
-    font-size: 30px;
-}
-.branch h2{
-    font-size: 20px;
-    padding: 1rem;
-    border: 1px solid white;
-}
-.email-container{
-    margin-top: 3rem;
-}
-.email-container h4{
-    font-size: 22px;
-    margin-bottom: 2rem;
-}
-.email-box input{
-    width: 24rem;
-    height: 3.5rem;
-    padding: 10px 20px;
-    border-radius: 50px;
-    outline: none;
-    border: none;
+  }
+  .footer-container .talk h3 {
+    font-size: 38px;
+  }
+  .talk h2 {
+    font-size: 28px;
+  }
+  .branch h3 {
+    font-size: 24px;
+  }
+  .branch h2 {
     font-size: 18px;
-}
-.email-box{
-    position: relative;
-    width: 24rem;
-    border-radius: 50px;
-}
-.email-box span{
-    position: absolute;
-    top: 5px;
-    right: 6px;
-    display: block;
-    background: linear-gradient(45deg, #ff0162, #8c00ff);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.email-box span svg{
-    font-size: 1.4rem;
-    fill: rgb(1, 8, 22);
-}
-.email-box:hover input{
-    border: 1px solid rgba(0, 0, 0, 0.404);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
-}
-.email-box span:hover{
-    background: black;
-}
-.email-box span:hover svg{
-    fill: white;
+    padding: 0.7rem 1rem;
+  }
+  .email-box {
+    width: 18rem;
+  }
+  .email-box input {
+    height: 3.8rem;
+  }
 }
 
-.copyright{
-    background: black;
-    padding: 2rem;
-    text-align: center;
-    width: 100vw;
-}
-
-@media(max-width: 768px){
-    .footer-left, .footer-right{
-        flex-basis: 80%;
-    }
-}
-@media(max-width: 450px){
-    .footer-container{
-        padding: 3rem 1rem;
-    }
-    .footer-left{
-        width: 100%;
-    }
-    .footer-container .talk h3{
-        font-size: 60px;
-        font-weight: 900;
-    }
-    .talk h2{
-        font-size: 30px;
-    }
-    .email-box{
-        width: 18rem;
-    }
-    .email-box input{
-        width: 18rem;
-        height: 4rem;
-    }
-    .email-box span{
-        top: 10%;
-        right: 4%;
-    }
-    .footer-right ul{
-        flex-basis: 50%;
-        margin-right: 4rem;
-    }
+@media (max-width: 450px) {
+  .footer-container .talk h3 {
+    font-size: 32px;
+  }
+  .talk h2 {
+    font-size: 22px;
+  }
+  .email-container h4 {
+    font-size: 18px;
+  }
+  .email-box {
+    width: 16rem;
+  }
 }

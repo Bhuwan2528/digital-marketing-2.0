@@ -1,6 +1,6 @@
 .courses {
-      max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 4rem 2rem;
   width: 100%;
   color: white;
@@ -29,88 +29,85 @@
   box-shadow: 0 8px 25px rgba(0,0,0,0.5);
 }
 
-.courses-list {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.course-card {
+/* Single Card Style */
+.single-course-card {
   background: #1b1b1b5b;
-  padding: 2rem;
+  padding: 3rem 2rem;
   border-radius: 15px;
-  flex: 1 1 300px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.6);
   transition: transform 0.3s, box-shadow 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.course-card:hover {
+.single-course-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.8);
 }
 
-.course-card ul {
+/* Columns inside the card */
+.course-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.course-columns ul {
   list-style: none;
   padding: 0;
-  margin-bottom: 1.5rem;
+  flex: 1 1 300px;
 }
 
-.course-card ul li {
-  font-size: 20px;
+.course-columns ul li {
+  font-size: 18px;
   margin-bottom: 10px;
   display: flex;
-  align-items: center;  /* ensures icon and text are vertically centered */
-  gap: 12px;
-  line-height: 1.4;     /* helps align multi-line text */
+  align-items: center;
+  gap: 10px;
+  line-height: 1.4;
 }
 
-.course-card ul li .icon {
-  font-size: 18px;      /* adjust icon size to match text */
-  flex-shrink: 0;       /* prevent icon from shrinking */
+.course-columns ul li .icon {
   color: #00ffff;
+  flex-shrink: 0;
 }
 
-.course-btn {
+/* Big Button below columns */
+.course-btn-big {
   width: 100%;
+  margin-top: 2rem;
   background: rgb(21, 108, 190);
   box-shadow: 0 0 10px rgba(8, 162, 233, 0.61);
   text-align: center;
   padding: 20px 30px;
   color: white;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-
-  /* Flex properties to center content */
-  display: flex;
-  justify-content: center; /* horizontal centering */
-  align-items: center;     /* vertical centering */
-  gap: 10px;               /* space if you add an icon later */
+  transition: all 0.3s ease;
 }
 
-.course-btn:hover {
+.course-btn-big:hover {
   background: rgb(8, 162, 233);
   box-shadow: 0 0 15px rgba(8, 162, 233, 0.8);
 }
 
+/* Responsive */
+@media(max-width: 768px) {
+  .course-columns {
+    flex-direction: column;
+  }
+}
 
-@media(max-width: 500px){
-  .courses{
+@media(max-width: 500px) {
+  .courses {
     padding: 3rem 1.5rem;
   }
-  .courses h2{
+  .courses h2 {
     font-size: 2rem;
   }
-  .courses p{
+  .courses p {
     font-size: 1rem;
-    width: 100%;
   }
 }

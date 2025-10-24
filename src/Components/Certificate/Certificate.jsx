@@ -29,7 +29,7 @@ const Certificate = () => {
           </div>
         </div>
 
-        <div className="offer-box">
+        <div className="certificate-box offer-box">
           <p className="offer-title">
             Grow Any Business using Google My Business for FREE!
           </p>
