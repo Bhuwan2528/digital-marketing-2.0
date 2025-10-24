@@ -201,6 +201,6 @@
 }
 @media(max-width: 400px){
   .form-container{
-    width: 120%;
+    width: 100%;
   }
 }
