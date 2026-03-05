@@ -1,4 +1,6 @@
 .choose{
+  max-width: 1300px;
+  margin-inline: auto;
     margin: 2rem auto ;
     width: 98%;
     backdrop-filter: blur(5px);
@@ -8,14 +10,14 @@
     padding: 2rem 4rem;
     gap: 20px;
     overflow: visible;
+    margin-bottom: 50px;
 }
 .choose h4{
     font-size: 40px;
-    margin: 0 auto;
+    margin: 50px auto;
 
 }
 .choose-card{
-    margin: 2rem;
     width: 100%;
     height: 24rem;
     display: flex;
@@ -62,6 +64,9 @@
         margin-top: 0rem;
         padding: 0 2rem;
         width: 100%;
+    }
+    .choose-card{
+        margin: 1rem auto;
     }
     .choose-card .card-right{
     padding: 1rem;

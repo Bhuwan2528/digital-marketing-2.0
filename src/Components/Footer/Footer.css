@@ -39,23 +39,60 @@
 .talk h2{
     font-size: 50px;
 }
-.branch{
-    margin: 2rem auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+
+.footer-branches{
+  color:#fff;
+  margin: 50px auto;
 }
-.branch h3{
-    font-size: 30px;
+
+.branches-title{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:30px;
 }
-.branch h2{
-    font-size: 20px;
-    padding: 1rem;
-    border: 1px solid white;
+
+.branches-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:30px;
 }
+
+.branch-col h3{
+  font-size:22px;
+  margin-bottom:12px;
+  transition:0.3s;
+}
+
+.branch-info{
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  font-size:16px;
+  color:#ccc;
+  margin-bottom:6px;
+  transition:0.3s;
+}
+
+.branch-icon{
+  font-size:16px;
+  margin-top:3px;
+}
+
+/* Hover effect without background */
+
+.branch-col:hover h3{
+  color:#ff4d6d;
+}
+
+.branch-col:hover .branch-info{
+  color:#fff;
+}
+
+.branch-col:hover .branch-icon{
+  transform:scale(1.2);
+  fill:#ff4d6d;
+}
+
 .email-container{
     margin-top: 3rem;
 }
@@ -147,4 +184,18 @@
         flex-basis: 50%;
         margin-right: 4rem;
     }
+}
+@media (max-width:768px){
+  .branches-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width:480px){
+  .branches-grid{
+    grid-template-columns:1fr;
+  }
+  .branches-title{
+    text-align: left;
+  }
 }

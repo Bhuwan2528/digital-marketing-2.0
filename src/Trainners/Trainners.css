@@ -1,4 +1,6 @@
 .trainners{
+  max-width: 1300px;
+  margin-inline: auto;
     padding: 3rem;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.034);
@@ -58,12 +60,12 @@
     border-radius: 50%;
     background: rgb(6, 38, 87);
 }
-@media(max-width: 400px){
+@media(max-width: 480px){
     .trainner{
         width: 100%;
     }
     .trainners{
-        padding: 2rem;
+        padding-inline: 1.5rem;
     }
     .trainners h2{
         font-size: 30px;

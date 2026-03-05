@@ -65,10 +65,12 @@
     flex-direction: column;
     gap: 30px;
     padding: 2rem;
+    width: 90%;
   }
   .countdown-timer{
     margin: auto;
     flex-basis: 60%;
+    justify-content: center;
   }
   .time-box{
     min-width: 100px;

@@ -1,36 +1,88 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Form.css';
 
 const FormSection = () => {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    city: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const message = `New Enquiry:%0A
+Name: ${formData.name}%0A
+Email: ${formData.email}%0A
+Phone: ${formData.phone}%0A
+City: ${formData.city}`;
+
+    const whatsappURL = `https://wa.me/919650539195?text=${message}`;
+
+    window.open(whatsappURL, "_blank");
+  };
+
   return (
-      <div className="form">
+    <div className="form">
       <div className="form-container">
-        <form className="custom-form">
 
-            <div className="form-content">
-                {/* <h3>Enroll Now in Our</h3> */}
-                {/* <h2>Fill This Form</h2> */}
-                {/* <span>Starting From 1st Aug</span> */}
-            </div>
+        <h2>Submit Your Details For A Callback</h2>
+
+        <form className="custom-form" onSubmit={handleSubmit}>
 
           <div className="form-group">
-            {/* <label>Name</label> */}
-            <input type="text" placeholder="Enter your name" />
+            <input 
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              onChange={handleChange}
+              required
+            />
           </div>
+
           <div className="form-group">
-            {/* <label>Email</label> */}
-            <input type="email" placeholder="Enter your email" />
+            <input 
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              onChange={handleChange}
+              required
+            />
           </div>
+
           <div className="form-group">
-            {/* <label>Phone Number</label> */}
-            <input type="tel" placeholder="Enter your phone number" />
+            <input 
+              type="tel"
+              name="phone"
+              placeholder="Enter your phone number"
+              onChange={handleChange}
+              required
+            />
           </div>
+
           <div className="form-group">
-            {/* <label>City</label> */}
-            <input type="text" placeholder="Enter your city" />
+            <input 
+              type="text"
+              name="city"
+              placeholder="Enter your city"
+              onChange={handleChange}
+              required
+            />
           </div>
+
           <button className="submit-btn">Submit</button>
+
         </form>
+
       </div>
     </div>
   );

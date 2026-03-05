@@ -79,7 +79,6 @@ const Header = ({ openPopup }) => {
         <Counter openPopup={openPopup}/>
         <Placement/>
         <Trainners/>
-        <Success/>
         <Video/>
         <Join/>
         <Choose/>

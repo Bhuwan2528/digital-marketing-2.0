@@ -4,7 +4,7 @@
   background: transparent;
 }
 .form-container {
-  max-width: 100%;
+  width: 100%;
   margin:  auto;
   /* padding: 30px 25px; */
   border: 1px solid #ddd;
@@ -31,28 +31,11 @@
     border-radius: 999px;
 } */
 
-.form-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
 
-.form-header h3 {
-  margin: 0;
-  color: #555;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.form-header h2 {
-  margin: 5px 0 10px;
-  color: #0047ab;
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #052242;
   font-size: 24px;
-}
-
-.form-header p {
-  margin: 0;
-  color: #777;
-  font-size: 14px;
 }
 
 .custom-form {
@@ -91,7 +74,7 @@
 }
 
 .form-group input:focus {
-  border-color: #007bff;
+  border-color: #052242;
 }
 
 #tel {
@@ -100,7 +83,7 @@
 
 .submit-btn {
   padding: 10px 20px;
-  background-color: #0047ab;
+  background-color: #052242;
   color: white;
   border: none;
   border-radius: 999px;
@@ -144,7 +127,7 @@
 }
 
 .form-container {
-  width: 320px;
+  max-width: 400px;
   padding: 25px 20px;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -170,7 +153,7 @@
 }
 
 .form-group input {
-  padding: 8px 10px;
+  padding: 12px 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 15px;
@@ -184,12 +167,12 @@
 
 .submit-btn {
   margin-top: 10px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-color: #00307a;
   color: white;
   border: none;
   border-radius: 999px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -198,7 +181,4 @@
 .submit-btn:hover {
   background-color: rgb(5, 93, 224);
   transform: translateY(-2px);
-}
-@media(max-width: 400px){
-  
 }

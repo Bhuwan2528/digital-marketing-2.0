@@ -1,4 +1,6 @@
 .courses{
+  max-width: 1300px;
+  margin-inline: auto;
   padding: 3rem 3rem;
   width: 100%;
   overflow: hidden;
@@ -84,11 +86,22 @@
   -webkit-text-fill-color: transparent;
   font-weight: 900;
 }
+.button-container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
 .btn.course-btn{
-  padding: 15px 18px;
+  padding: 10px 15px;
    box-shadow: 0 0 10px rgba(255, 0, 128, 0.5),
               0 0 10px rgba(132, 0, 255, 0.5);
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  white-space: nowrap;
 }
+
 /* --------------------OUTLINE TEXT FINISHES HERE -------------------*/
 
 .course img {
@@ -208,5 +221,9 @@
   }
   .course{
     padding: 1.5rem;
+  }
+  .button-container{
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }

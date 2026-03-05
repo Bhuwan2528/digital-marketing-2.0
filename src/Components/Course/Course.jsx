@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import './Course.css'
 import { FaArrowRightLong } from "react-icons/fa6";
 import graphic from '../../assets/graphic.png'
-import digital from '../../assets/digital.jpeg'
+import digital from '../../assets/digital.webp'
 import web from '../../assets/web.jpeg'
 import video from '../../assets/video.jpeg'
 import AOS from "aos";
@@ -79,10 +79,6 @@ const Course = ({openPopup}) => {
         data-aos-anchor-placement="top-bottom"
       >Our Courses</h2>
 
-      <button className="arrow-btn left" onClick={scrollLeft}>
-        ◀
-      </button>
-
     <div className='course-container'  ref={containerRef}>
         
         <div className="course">
@@ -96,9 +92,17 @@ const Course = ({openPopup}) => {
               <li> <FaArrowRight />  Search Engine OPtimization</li>
               <li> <FaArrowRight />  Content Marketing</li>
             </ul>
-            <button className="btn course-btn" onClick={openPopup}> 
-              Apply Now <FaArrowRightLong className='btn-icon'/>
-            </button>
+
+            <div className="button-container">
+              <button className="btn course-btn" onClick={openPopup}> 
+                Apply Now 
+              </button>
+
+              <a href="brochure.pdf" className="btn course-btn" download>
+                Download Brochure
+              </a>
+            </div>
+
         </div>
 
         <div className="course">
@@ -112,9 +116,18 @@ const Course = ({openPopup}) => {
               <li><FaArrowRight />Problem-Solving Skills</li>
               <li><FaArrowRight />Confidence Building</li>
             </ul>
-            <button className="btn course-btn" onClick={openPopup}> 
-              Apply Now <FaArrowRightLong className='btn-icon'/>
-            </button>
+
+            <div className="button-container">
+              <button className="btn course-btn" onClick={openPopup}> 
+                Apply Now  
+              </button>
+
+              <a href="brochure.pdf" className="btn course-btn" download>
+                Download Brochure  
+              </a>
+            </div>
+
+
         </div>
 
         <div className="course">
@@ -128,9 +141,17 @@ const Course = ({openPopup}) => {
               <li><FaArrowRight />Adobe Premiere Pro</li>
               <li><FaArrowRight />CapCut</li>
             </ul>
-            <button className="btn course-btn" onClick={openPopup}> 
-              Apply Now <FaArrowRightLong className='btn-icon'/>
-            </button>
+
+            <div className="button-container">
+              <button className="btn course-btn" onClick={openPopup}> 
+                Apply Now  
+              </button>
+
+              <a href="brochure.pdf" className="btn course-btn" download>
+                Download Brochure  
+              </a>
+            </div>
+            
         </div>
 
         {/* <div className="course">
@@ -139,15 +160,11 @@ const Course = ({openPopup}) => {
             <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptas</p>
             <button className="btn course-btn"> 
-              Read More <FaArrowRightLong className='btn-icon'/>
+              Read More  
             </button>
         </div> */}
 
     </div>
-
-      <button className="arrow-btn right" onClick={scrollRight}>
-        ▶
-      </button>
 
     </div>
   )

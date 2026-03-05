@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="btn"><h4>Starting Package : <span>5 Lacs - 6 Lacs</span> </h4></div>
       <h2 className='hero-text'>4 Months Online & Offline Digital Marketing Course To Make You A High-Paying <span>
             <Typewriter
-            words={['Digital Marketer']}
+            words={['Digital Marketer', 'Business Coach', 'Video Edittor', 'Graphic Designer']}
             loop={true}
             cursor
             cursorStyle='|'

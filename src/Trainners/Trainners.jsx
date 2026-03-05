@@ -15,7 +15,7 @@ const Trainners = () => {
                 </span>
                 <div className="trainner-content">
                     <h3>Rahish Sangwan</h3>
-                    <p>SEO Specialist</p>
+                    <p>Founder & Digital Marketing Specialist</p>
                 </div>
             </div>
 
@@ -24,8 +24,8 @@ const Trainners = () => {
                     <img src="" alt="" />
                 </span>
                 <div className="trainner-content">
-                    <h3>Rahish Sangwan</h3>
-                    <p>SEO Specialist</p>
+                    <h3>Bhuwan Suneja</h3>
+                    <p>AI & Web Development Trainner</p>
                 </div>
             </div>
 
@@ -34,8 +34,8 @@ const Trainners = () => {
                     <img src="" alt="" />
                 </span>
                 <div className="trainner-content">
-                    <h3>Rahish Sangwan</h3>
-                    <p>SEO Specialist</p>
+                    <h3>Simran</h3>
+                    <p>Advanced Digital Marketing With AI Trainner</p>
                 </div>
             </div>
 

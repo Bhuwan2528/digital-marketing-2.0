@@ -1,4 +1,6 @@
 .join{
+  max-width: 1300px;
+  margin-inline: auto;
     margin: 1rem auto;
     padding: 4rem 2rem;
     padding-bottom: 4rem;
@@ -109,7 +111,10 @@
 }
 @media(max-width: 820px){
     .join{
-        padding: 4rem 2rem;
+        padding: 4rem 1.5rem;
+    }
+    .join .cards{
+        gap: 0 0px ;
     }
     .cards a{
         width: 50%;
