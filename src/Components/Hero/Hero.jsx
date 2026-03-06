@@ -4,6 +4,7 @@ import hero from '../../assets/hero.jpg';
 import { motion } from "framer-motion";
 
 import { Typewriter } from 'react-simple-typewriter';
+import { FaShieldAlt } from "react-icons/fa";
 
 
 const Hero = () => {
@@ -21,6 +22,14 @@ const Hero = () => {
             delaySpeed={1500}
         />
       </span></h2>
+
+      <div className="placement-box">
+        <FaShieldAlt className="shield-icon"/>
+        <p>
+          कोर्स पूरा होने के बाद <span>15 दिनों</span> के अंदर कंपनी द्वारा 
+          <span> प्लेसमेंट</span> – वरना <span>100% फीस वापसी!</span>
+        </p>
+      </div>
       <img src={hero} />
        
     </div>

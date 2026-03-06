@@ -1,6 +1,6 @@
 .hero {
     max-width: 100%;
-    overflow-x: hidden; /* lowercase x */
+    overflow: hidden; /* lowercase x */
     padding-top: 0rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -47,6 +47,45 @@
     margin: auto;
 }
 
+.placement-box{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 2.2rem;
+    padding: 12px 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 40px;
+
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(231, 231, 231);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.placement-box p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.placement-box span{
+    font-weight: 800;
+
+    background: linear-gradient(to right, #a200ff, #ff0180);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shield-icon{
+    font-size: 3rem;
+    fill: #d41886;
+}
+
 .hero img {
     display: block;
     width: 100%; /* prevents overflow on small screens */
@@ -60,7 +99,7 @@
 
 @media(max-width:820px){
     .hero {
-        height: 100vh;
+        height: 105vh;
     }
 }
 
@@ -72,17 +111,18 @@
         margin-bottom: 2rem;
         letter-spacing: 2px;
         margin-top: 20px;
+        height: 300px;
     }
     .hero-text span{
         display: block;
     }
     .hero {
-        height: 95vh;
+        height: 100vh;
         padding-top: 3rem;
         padding-bottom: 0rem;
     }
     .btn h4{ 
-        font-size: 28px;
+        font-size: 26px;
         line-height: 1.4;
     }
     .hero h4 span{
@@ -91,22 +131,33 @@
     .hero .btn{
         padding: 18px 40px;
     }
+    .placement-box{
+    width: 95%;
+    padding: 12px 18px;
+}
+
+.placement-box p{
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
 }
 
 @media(max-width:400px){
     .hero {
-        height: 100vh;
         padding: 3rem 1rem;
-        height: 115vh;
+        height: 125vh;
+        overflow-y: hidden;
     }
     .hero-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
         width: 95%;
     }
     .hero .btn{
         width: 90%;
     }
     .hero .btn h4{
-        font-size: 27px;
+        font-size: 23px;
     }
 }

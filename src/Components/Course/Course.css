@@ -138,39 +138,6 @@
   margin-bottom: 3px;
 }
 
-/*-------------------------- ARROW BUTTONS ------------------- */
-
-
-.arrow-btn {
-  position: absolute;
-  top: 55%;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  background: #ffffff5d;
-  color: rgba(0, 0, 0, 0.63);
-  border: none;
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 50%;
-}
-.arrow-btn:hover{
-  background: white;
-  color: black;
-}
-
-.arrow-btn.left {
-  left: 10px;
-}
-
-.arrow-btn.right {
-  right: 10px;
-}
-
 /* Optional: Hide scrollbar */
 .course-container::-webkit-scrollbar {
   display: none;
@@ -223,7 +190,8 @@
     padding: 1.5rem;
   }
   .button-container{
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
   }
 }
