@@ -1,0 +1,236 @@
+.footer{
+    margin-bottom: 0;
+    padding: 2rem 1rem;
+    padding-bottom: 0;
+    margin: 0;
+}
+.footer-container{
+    width: 97%;
+    margin: 1rem auto;
+    background: rgba(2, 25, 46, 0.473);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.342);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container .talk h3{
+    font-size: 70px;
+    font-weight: 900;
+    display: inline-block;
+    background: linear-gradient(45deg, #ff0162, #8c00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.talk{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.talk h2{
+    font-size: 50px;
+}
+
+.footer-branches{
+color:#fff;
+margin:60px auto;
+width:100%;
+}
+
+.branches-title{
+text-align:center;
+font-size:34px;
+margin-bottom:40px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+/* GRID */
+
+.branches-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+/* CARD */
+
+.branch-col{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+border-radius:18px;
+padding:25px 25px;
+transition:0.3s ease;
+backdrop-filter:blur(6px);
+}
+
+/* HOVER */
+
+.branch-col:hover{
+transform:translateY(-6px);
+border:1px solid #ff4d6d;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* BRANCH TITLE */
+
+.branch-col h3{
+font-size:22px;
+margin-bottom:15px;
+color:#fff;
+}
+
+/* INFO */
+
+.branch-info{
+display:flex;
+align-items:flex-start;
+gap:10px;
+font-size:15px;
+color:#cfcfcf;
+margin-bottom:10px;
+line-height:1.5;
+transition:0.3s;
+}
+
+/* ICON */
+
+.branch-icon{
+font-size:18px;
+margin-top:3px;
+color:#ff4d6d;
+min-width:18px;
+}
+
+/* HOVER TEXT */
+
+.branch-col:hover .branch-info{
+color:#fff;
+}
+
+.branch-col:hover .branch-icon{
+transform:scale(1.2);
+}
+
+
+
+.email-container{
+    margin-top: 3rem;
+}
+.email-container h4{
+    font-size: 22px;
+    margin-bottom: 2rem;
+}
+.email-box input{
+    width: 24rem;
+    height: 3.5rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+.email-box{
+    position: relative;
+    width: 24rem;
+    border-radius: 50px;
+}
+.email-box span{
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    display: block;
+    background: linear-gradient(45deg, #ff0162, #8c00ff);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-box span svg{
+    font-size: 1.4rem;
+    fill: rgb(1, 8, 22);
+}
+.email-box:hover input{
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.email-box span:hover{
+    background: black;
+}
+.email-box span:hover svg{
+    fill: white;
+}
+
+.copyright{
+    background: black;
+    padding: 2rem;
+    text-align: center;
+    width: 100vw;
+}
+
+@media(max-width: 768px){
+    .footer-left, .footer-right{
+        flex-basis: 80%;
+    }
+}
+@media(max-width: 450px){
+    .footer-container{
+        padding: 3rem 1rem;
+    }
+    .footer-left{
+        width: 100%;
+    }
+    .footer-container .talk h3{
+        font-size: 60px;
+        font-weight: 900;
+    }
+    .talk h2{
+        font-size: 30px;
+    }
+    .email-box{
+        width: 18rem;
+    }
+    .email-box input{
+        width: 18rem;
+        height: 4rem;
+    }
+    .email-box span{
+        top: 10%;
+        right: 4%;
+    }
+    .footer-right ul{
+        flex-basis: 50%;
+        margin-right: 4rem;
+    }
+}
+@media (max-width:900px){
+
+.branches-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:500px){
+
+.branches-grid{
+grid-template-columns:1fr;
+}
+
+.branches-title{
+text-align:left;
+}
+
+}
