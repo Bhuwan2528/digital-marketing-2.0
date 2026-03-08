@@ -25,11 +25,11 @@ const Footer = () => {
                 <h3>Rohtak</h3>
                 <p className="branch-info">
                     <FaMapMarkerAlt className="branch-icon"/>
-                    123 Model Town, Rohtak, Haryana
+                    1st Floor, 129 L, near by CR Polytechnic Back Gate Power House, Model Town, Rohtak, Haryana 124001
                 </p>
                 <p className="branch-info">
                     <FaPhoneAlt className="branch-icon"/>
-                    +91 98765 43210
+                    +91 8950329919
                 </p>
                 </div>
 
@@ -37,11 +37,11 @@ const Footer = () => {
                 <h3>Hissar</h3>
                 <p className="branch-info">
                     <FaMapMarkerAlt className="branch-icon"/>
-                    45 Urban Estate, Hissar, Haryana
+                    DSB -198, Red Square Market, 125001, near by Eminent Mall, Mehta Nagar, Hisar, Haryana 125001
                 </p>
                 <p className="branch-info">
                     <FaPhoneAlt className="branch-icon"/>
-                    +91 98765 43211
+                    +91 7800020055
                 </p>
                 </div>
 
@@ -49,11 +49,11 @@ const Footer = () => {
                 <h3>Delhi</h3>
                 <p className="branch-info">
                     <FaMapMarkerAlt className="branch-icon"/>
-                    Connaught Place, New Delhi
+                    Office No: 44, Dwarka Mor Phase 1, Mohan Garden, Uttam Nagar, Delhi, 110059
                 </p>
                 <p className="branch-info">
                     <FaPhoneAlt className="branch-icon"/>
-                    +91 98765 43212
+                    +91 8684031003
                 </p>
                 </div>
 
@@ -85,11 +85,11 @@ const Footer = () => {
                 <h3>Dehradun</h3>
                 <p className="branch-info">
                     <FaMapMarkerAlt className="branch-icon"/>
-                    Rajpur Road, Dehradun
+                    Office No 46, Balliwala Chowk, Vijay Park Extension, Dehradun, Uttarakhand 248001
                 </p>
                 <p className="branch-info">
                     <FaPhoneAlt className="branch-icon"/>
-                    +91 98765 43215
+                    +91 7206720663
                 </p>
                 </div>
 

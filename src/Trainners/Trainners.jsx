@@ -1,50 +1,100 @@
-import React from 'react'
-import './Trainners.css'
-import bhuwan from '../assets/bhuwan.jpeg'
-import rahish from '../assets/rahish.jpeg'
-import simran from '../assets/simran.jpeg'
+import React from "react";
+import "./Trainners.css";
+
+import bhuwan from "../assets/bhuwan.jpeg";
+import rahish from "../assets/rahish.jpeg";
+import simran from "../assets/simran.jpeg";
 
 const Trainners = () => {
   return (
-    <div className='trainners'>
-        <h2>Meet Your Digital Marketing Training Captains</h2>
-        <p>Teached 100+ Students And Help Them To Grow In There Careers</p>
+    <div className="trainners">
 
-        <div className="trainner-container">
+      <h2>Meet Your Digital Marketing Training Captains</h2>
+      <p>Teached 100+ Students And Help Them To Grow In There Careers</p>
 
-            <div className="trainner">
-                <span className="trainner-img">
-                    <img src={rahish} alt="" />
-                </span>
-                <div className="trainner-content">
-                    <h3>Rahish Sangwan</h3>
-                    <p>Founder & Digital Marketing Specialist</p>
-                </div>
-            </div>
+      {/* Top Trainers */}
 
-            <div className="trainner">
-                <span className="trainner-img">
-                    <img src={bhuwan} alt="" />
-                </span>
-                <div className="trainner-content">
-                    <h3>Bhuwan Suneja</h3>
-                    <p>AI & Web Development Trainner</p>
-                </div>
-            </div>
+      <div className="top-trainers">
 
-            <div className="trainner">
-                <span className="trainner-img">
-                    <img src={simran} alt="" />
-                </span>
-                <div className="trainner-content">
-                    <h3>Simran</h3>
-                    <p>Advanced Digital Marketing With AI Trainner</p>
-                </div>
-            </div>
+        {/* Founder */}
+
+        <div className="top-card founder">
+
+          <div className="top-img">
+            <span className="badge">Founder & CEO</span>
+            <img src={rahish} alt="" />
+          </div>
+
+          <div className="top-content">
+            <h3>Rahish Sangwan</h3>
+            <p>Founder & Digital Marketing Specialist</p>
+          </div>
 
         </div>
-    </div>
-  )
-}
 
-export default Trainners
+
+        {/* Second Trainer */}
+
+        <div className="top-card">
+
+          <div className="top-img">
+            <img src={simran} alt="" />
+          </div>
+
+          <div className="top-content">
+            <h3>Simran</h3>
+            <p>Advanced Digital Marketing With AI Trainer</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* Team Grid */}
+
+      <div className="trainer-grid">
+
+        <div className="trainer-card">
+          <img src={bhuwan} alt="" />
+          <h4>Bhuwan Suneja</h4>
+          <p>AI & Web Development Trainer</p>
+        </div>
+
+        <div className="trainer-card">
+          <img src={bhuwan} alt="" />
+          <h4>Trainer Name</h4>
+          <p>Role or Specialization</p>
+        </div>
+
+        <div className="trainer-card">
+          <img src={simran} alt="" />
+          <h4>Trainer Name</h4>
+          <p>Role or Specialization</p>
+        </div>
+
+        <div className="trainer-card">
+          <img src={bhuwan} alt="" />
+          <h4>Trainer Name</h4>
+          <p>Role or Specialization</p>
+        </div>
+
+        <div className="trainer-card">
+          <img src={simran} alt="" />
+          <h4>Trainer Name</h4>
+          <p>Role or Specialization</p>
+        </div>
+
+        <div className="trainer-card">
+          <img src={bhuwan} alt="" />
+          <h4>Trainer Name</h4>
+          <p>Role or Specialization</p>
+        </div>
+
+      </div>
+
+    </div>
+  );
+};
+
+export default Trainners;

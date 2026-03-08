@@ -27,7 +27,7 @@ const Hero = () => {
         <FaShieldAlt className="shield-icon"/>
         <p>
           कोर्स पूरा होने के बाद <span>15 दिनों</span> के अंदर कंपनी द्वारा 
-          <span> प्लेसमेंट</span> – वरना <span>100% फीस वापसी!</span>
+          <span> प्लेसमेंट</span> – वरना <span className="fees">100% फीस वापसी!</span>
         </p>
       </div>
       <img src={hero} />

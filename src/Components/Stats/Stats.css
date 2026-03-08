@@ -92,3 +92,13 @@
         padding: 10px;
     }
 }
+
+
+@media(max-width: 500px){
+
+    .stats{
+        padding: 30px 1rem;
+        
+    margin-bottom: 3rem;
+    }
+}
