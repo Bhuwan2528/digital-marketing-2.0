@@ -69,13 +69,13 @@
     .stats-card{
         width: calc(50% - 10px); /* 2 cards per row */
     }
-    .card-right h3, .card-right p{
+    .card-top .card-right h3, .card-top .card-right p{
         margin: auto;
         text-align: left;
+        white-space: nowrap;
     }
     .card-right h3{
         font-size: 22px;
-        white-space: nowrap;
     }
     .card-left span{
         width: 40px;
@@ -84,8 +84,8 @@
     .card-left span svg{
         font-size: 20px;
     }
-    .card-right p{
-        font-size: 14px;
+    .card-top .card-right p{
+        font-size: 13px;
     }
     .stats-card{
         padding: 10px;
