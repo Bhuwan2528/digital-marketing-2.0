@@ -39,7 +39,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
+
+.video::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      to top,
+      rgba(9, 168, 231, 0.45),
+      rgba(6, 58, 82, 0.527),
+      transparent
+  );
+  pointer-events: none;
+}
+
 @media(max-width: 480px){
     .videoes{
         padding-inline: 1.5rem;
@@ -85,6 +102,7 @@ fill:black;
 background:#eee;
 padding:18px;
 border-radius:50%;
+z-index: 4;
 }
 
 
