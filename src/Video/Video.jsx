@@ -3,7 +3,10 @@ import './Video.css'
 import { FaPlay } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
-const videoUrl = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4";
+const video1 = "https://res.cloudinary.com/dyiqsf4ze/video/upload/v1773039811/video1_hktex6.mp4";
+const video2 = "https://res.cloudinary.com/dyiqsf4ze/video/upload/v1773039813/video2_um2bq5.mp4";
+const video3 = "https://res.cloudinary.com/dyiqsf4ze/video/upload/v1773039812/video3_eqf8nf.mp4";
+const video4 = "https://res.cloudinary.com/dyiqsf4ze/video/upload/v1773039858/video4_ddh3jo.mp4";
 
 const Video = () => {
 
@@ -31,51 +34,30 @@ setPopupVideo(null)
         <div className="videoes-container">
 
 {/* VIDEO 1 */}
-<div className="video" onClick={()=>openVideo(videoUrl)}>
-    <video 
-        src={videoUrl}
-        preload="metadata"
-        muted
-        playsInline
-    />
+<div className="video" onClick={()=>openVideo(video1)}>
+    <video src={video1} preload="metadata" muted playsInline />
     <FaPlay className="play-icon"/>
 </div>
 
 {/* VIDEO 2 */}
-<div className="video" onClick={()=>openVideo(videoUrl)}>
-    <video 
-        src={videoUrl}
-        preload="metadata"
-        muted
-        playsInline
-    />
+<div className="video" onClick={()=>openVideo(video2)}>
+    <video src={video2} preload="metadata" muted playsInline />
     <FaPlay className="play-icon"/>
 </div>
 
 {/* VIDEO 3 */}
-<div className="video" onClick={()=>openVideo(videoUrl)}>
-    <video 
-        src={videoUrl}
-        preload="metadata"
-        muted
-        playsInline
-    />
+<div className="video" onClick={()=>openVideo(video3)}>
+    <video src={video3} preload="metadata" muted playsInline />
     <FaPlay className="play-icon"/>
 </div>
 
 {/* VIDEO 4 */}
-<div className="video" onClick={()=>openVideo(videoUrl)}>
-    <video 
-        src={videoUrl}
-        preload="metadata"
-        muted
-        playsInline
-    />
+<div className="video" onClick={()=>openVideo(video4)}>
+    <video src={video4} preload="metadata" muted playsInline />
     <FaPlay className="play-icon"/>
 </div>
 
         </div>
-
 
 {/* VIDEO POPUP */}
 
